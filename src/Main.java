@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+      IDandPasswords idandpasswords = new IDandPasswords();
+      LoginPage loginpage = new LoginPage(idandpasswords.getLoginInfo());
+
     }
 }
