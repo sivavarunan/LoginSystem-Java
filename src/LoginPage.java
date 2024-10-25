@@ -66,7 +66,8 @@ public class LoginPage implements ActionListener {
                 if (loginInfo.get(userID).equals(password)){
                     messageLabel.setForeground(Color.green);
                     messageLabel.setText("Login Successful");
-                    WelcomePage welcomePage = new WelcomePage();
+                    frame.dispose();
+                    WelcomePage welcomePage = new WelcomePage(userID);
                 }
                 else{
                     messageLabel.setForeground(Color.red);
